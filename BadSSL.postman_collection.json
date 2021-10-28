@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "5e8fed63-9f80-4a40-a7b1-8727e3363dcf",
+		"name": "BadSSL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Self-Signed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://self-signed.badssl.com/",
+					"protocol": "https",
+					"host": [
+						"self-signed",
+						"badssl",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Expired",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://expired.badssl.com/",
+					"protocol": "https",
+					"host": [
+						"expired",
+						"badssl",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wrong Host",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://wrong.host.badssl.com/",
+					"protocol": "https",
+					"host": [
+						"wrong",
+						"host",
+						"badssl",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
